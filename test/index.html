@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../dist/index.js"></script>
+</head>
+<body>
+	<div id='box' style="width: 300px; background-color: #d0c; height: 300px; border: 1px solid #ccd;">
+		<h3>lsfsjdfklsf</h3>
+		<p style='color:#fc0; background-color: #0cf' >123123123</p>
+		<select name="" id="">
+			<option value="">123123</option>
+		</select>
+	</div>
+	
+	<canvas id="cs"></canvas>
+	<script>
+		var d = new Dom('box')
+		document.getElementById('cs').addEventListener('click', function () {
+			d.drawToCanvas('cs')
+		}, false)
+	</script>
+</body>
+</html>
